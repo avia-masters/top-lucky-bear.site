@@ -22,12 +22,12 @@
     <!-- /Yandex.Metrika counter -->
     
     <title>Контакты Lucky Bear Казино — служба поддержки</title>
-    <meta name="description" content="Контакты Lucky Bear Казино: служба поддержки, Telegram-бот, email, форма обратной связи. Мы всегда готовы помочь вам 24/7.">
+    <meta name="description" content="Контакты Lucky Bear Казино: служба поддержки, Telegram-бот, форма обратной связи. Мы всегда готовы помочь вам 24/7.">
     <meta name="theme-color" content="#0a1628">
     <link rel="canonical" href="https://top-lucky-bear.site/contacts.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Контакты Lucky Bear Казино — служба поддержки">
-    <meta property="og:description" content="Контакты Lucky Bear Казино: служба поддержки, Telegram-бот, email, форма обратной связи.">
+    <meta property="og:description" content="Контакты Lucky Bear Казино: служба поддержки, Telegram-бот, форма обратной связи.">
     <meta property="og:url" content="https://top-lucky-bear.site/contacts.html">
     <meta property="og:image" content="https://top-lucky-bear.site/images/logo.png">
 
@@ -225,11 +225,9 @@
             font-size: 15px;
             margin-bottom: 4px;
         }
-        .contact-card a {
-            color: #4ab8ff;
-            font-weight: 600;
+        .contact-card .btn {
+            margin-top: 12px;
         }
-        .contact-card a:hover { color: #7acbff; }
 
         .form-group {
             margin-bottom: 20px;
@@ -491,26 +489,26 @@
                     <div class="contact-card">
                         <div class="icon">💬</div>
                         <h3>Live-чат</h3>
-                        <p>Ответ на сайте за 30 секунд</p>
-                        <a href="https://lb777.xyz/5dsgV7" rel="nofollow sponsored">Открыть чат</a>
+                        <p>Быстрая помощь на сайте</p>
+                        <a href="https://lb777.xyz/5dsgV7" rel="nofollow sponsored" class="btn primary" style="display:inline-block; padding:10px 30px; font-size:14px;">Открыть чат</a>
                     </div>
                     <div class="contact-card">
                         <div class="icon">✈️</div>
                         <h3>Telegram</h3>
-                        <p>Наш бот поддержки всегда онлайн</p>
-                        <a href="https://t.me/LuckyBear_Support_Bot" target="_blank">@LuckyBear_Support_Bot</a>
+                        <p>Поддержка в мессенджере</p>
+                        <a href="https://lb777.xyz/5dsgV7" rel="nofollow sponsored" class="btn primary" style="display:inline-block; padding:10px 30px; font-size:14px;">Написать в Telegram</a>
                     </div>
                     <div class="contact-card">
                         <div class="icon">📧</div>
                         <h3>Email</h3>
-                        <p>Для подробных запросов</p>
-                        <a href="mailto:support@top-lucky-bear.site">support@top-lucky-bear.site</a>
+                        <p>Для детальных запросов</p>
+                        <a href="https://lb777.xyz/5dsgV7" rel="nofollow sponsored" class="btn primary" style="display:inline-block; padding:10px 30px; font-size:14px;">Написать на почту</a>
                     </div>
                     <div class="contact-card">
                         <div class="icon">📚</div>
                         <h3>База знаний</h3>
-                        <p>Ответы на все частые вопросы</p>
-                        <a href="faq.html">Перейти к FAQ</a>
+                        <p>Ответы на все вопросы</p>
+                        <a href="faq.html" class="btn primary" style="display:inline-block; padding:10px 30px; font-size:14px;">Перейти к FAQ</a>
                     </div>
                 </div>
             </div>
@@ -530,10 +528,6 @@
                     <div class="form-group">
                         <label for="name">Ваше имя</label>
                         <input type="text" id="name" placeholder="Введите ваше имя" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Электронная почта</label>
-                        <input type="email" id="email" placeholder="Введите ваш email" required>
                     </div>
                     <div class="form-group">
                         <label for="subject">Тема обращения</label>
@@ -657,20 +651,19 @@
                 });
             }
 
-            // Форма обратной связи
+            // Форма обратной связи — просто показывает сообщение
             const form = document.getElementById('contactForm');
             if (form) {
                 form.addEventListener('submit', function(e) {
                     e.preventDefault();
                     const name = document.getElementById('name').value;
-                    const email = document.getElementById('email').value;
                     const message = document.getElementById('message').value;
 
-                    if (name && email && message) {
-                        alert('Спасибо за ваше сообщение! Мы свяжемся с вами в ближайшее время.');
+                    if (name && message) {
+                        alert('✅ Спасибо за ваше сообщение! Мы свяжемся с вами в ближайшее время.');
                         form.reset();
                     } else {
-                        alert('Пожалуйста, заполните все обязательные поля.');
+                        alert('⚠️ Пожалуйста, заполните все обязательные поля.');
                     }
                 });
             }
